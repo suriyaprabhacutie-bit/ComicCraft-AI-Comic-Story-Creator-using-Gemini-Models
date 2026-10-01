@@ -1,0 +1,303 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* Top Bar */
+
+.topbar {
+    background: #111827;
+    color: white;
+    padding: 25px 0;
+    margin-bottom: 40px;
+}
+
+
+.topbar h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+
+.topbar p {
+    color: #d1d5db;
+}
+
+
+/* Hero */
+
+.hero {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.hero h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+
+.hero p {
+    color: #6b7280;
+}
+
+
+/* Card */
+
+.card {
+    background: white;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    margin-bottom: 40px;
+}
+
+
+/* Form */
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #6366f1;
+}
+
+
+.form-group textarea {
+    resize: vertical;
+}
+
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    background: #4f46e5;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 13px 22px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+.btn:hover {
+    background: #3730a3;
+    transform: translateY(-1px);
+}
+
+
+.secondary-btn {
+    background: #374151;
+}
+
+
+.secondary-btn:hover {
+    background: #1f2937;
+}
+
+
+/* Comic Grid */
+
+.comic-grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(300px, 1fr)
+    );
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+
+/* Comic Panel */
+
+.comic-panel {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+.panel-number {
+    background: #111827;
+    color: white;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+
+.comic-panel h3 {
+    padding: 18px 18px 10px;
+    font-size: 22px;
+}
+
+
+.panel-image {
+    width: 100%;
+    background: #f3f4f6;
+}
+
+
+.panel-image img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+}
+
+
+.panel-content {
+    padding: 20px;
+}
+
+
+.panel-content h4 {
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+
+.panel-content p {
+    color: #4b5563;
+}
+
+
+.caption {
+    font-weight: bold;
+}
+
+
+/* Details */
+
+details {
+    margin-top: 15px;
+    background: #f3f4f6;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* Actions */
+
+.actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 30px 0 50px;
+}
+
+
+/* Success Page */
+
+.success-page {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.success-card {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+
+.success-icon {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+
+.success-card h1 {
+    margin-bottom: 10px;
+}
+
+
+.success-card p {
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 94%;
+    }
+
+    .topbar h1 {
+        font-size: 24px;
+    }
+
+    .hero h2 {
+        font-size: 27px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .panel-image img {
+        height: 260px;
+    }
+
+}

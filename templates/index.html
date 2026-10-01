@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>ComicCraft - AI Comic Creator</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/css/style.css"
+    >
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div class="container">
+            <h1>🎨 ComicCraft</h1>
+            <p>AI-Powered Comic & Story Creator</p>
+        </div>
+    </header>
+
+
+    <main class="container">
+
+        <section class="hero">
+            <h2>Create Your Own AI Comic</h2>
+
+            <p>
+                Enter your story idea and let ComicCraft
+                create a complete 5-panel comic.
+            </p>
+        </section>
+
+
+        <section class="card">
+
+            <form
+                action="/generate"
+                method="post"
+            >
+
+                <!-- Story Prompt -->
+
+                <div class="form-group">
+
+                    <label for="story_prompt">
+                        Story Prompt
+                    </label>
+
+                    <textarea
+                        id="story_prompt"
+                        name="story_prompt"
+                        rows="5"
+                        placeholder="Example: A college student discovers a magical book..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- Character -->
+
+                <div class="form-group">
+
+                    <label for="character_name">
+                        Character Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="character_name"
+                        name="character_name"
+                        placeholder="Example: Anu"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Setting -->
+
+                <div class="form-group">
+
+                    <label for="setting">
+                        Setting
+                    </label>
+
+                    <select
+                        id="setting"
+                        name="setting"
+                        required
+                    >
+
+                        <option value="">
+                            Select a setting
+                        </option>
+
+                        <option value="College">
+                            College
+                        </option>
+
+                        <option value="Village">
+                            Village
+                        </option>
+
+                        <option value="City">
+                            City
+                        </option>
+
+                        <option value="Forest">
+                            Forest
+                        </option>
+
+                        <option value="Space">
+                            Space
+                        </option>
+
+                        <option value="Fantasy World">
+                            Fantasy World
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Tone -->
+
+                <div class="form-group">
+
+                    <label for="tone">
+                        Story Tone
+                    </label>
+
+                    <select
+                        id="tone"
+                        name="tone"
+                        required
+                    >
+
+                        <option value="">
+                            Select story tone
+                        </option>
+
+                        <option value="Funny">
+                            Funny
+                        </option>
+
+                        <option value="Adventure">
+                            Adventure
+                        </option>
+
+                        <option value="Emotional">
+                            Emotional
+                        </option>
+
+                        <option value="Mystery">
+                            Mystery
+                        </option>
+
+                        <option value="Fantasy">
+                            Fantasy
+                        </option>
+
+                        <option value="Action">
+                            Action
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Art Style -->
+
+                <div class="form-group">
+
+                    <label for="art_style">
+                        Art Style
+                    </label>
+
+                    <select
+                        id="art_style"
+                        name="art_style"
+                        required
+                    >
+
+                        <option value="">
+                            Select art style
+                        </option>
+
+                        <option value="Anime">
+                            Anime
+                        </option>
+
+                        <option value="Comic Book">
+                            Comic Book
+                        </option>
+
+                        <option value="Cartoon">
+                            Cartoon
+                        </option>
+
+                        <option value="Realistic">
+                            Realistic
+                        </option>
+
+                        <option value="Watercolor">
+                            Watercolor
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Submit -->
+
+                <button
+                    type="submit"
+                    class="btn"
+                >
+                    ✨ Generate Comic
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
